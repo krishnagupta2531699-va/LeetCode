@@ -10,9 +10,7 @@ class Solution {
             else if(nums[mid]>target){
                 hi=mid-1;
             }
-            else{
-                
-            }
+        
          }
          return lo;
     }
