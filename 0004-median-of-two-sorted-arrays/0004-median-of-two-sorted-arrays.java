@@ -27,7 +27,7 @@ class Solution {
            else{
               double mid1=arr[n/2-1];
               double mid2=arr[n/2];
-              double median=(mid1+mid2)/2.0;
+              double median=(mid1+mid2)/2;
               return median;
            }
            
