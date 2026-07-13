@@ -1,8 +1,8 @@
 class Solution {
     public int findPeakElement(int[] arr) {
-        int lo=0,hi=arr.length-1;
+        int lo=0,hi=arr.length-1,mid=0;
         while(lo<hi){
-          int mid=lo+(hi-lo)/2;
+           mid=lo+(hi-lo)/2;
             
            if(arr[mid]>arr[mid+1]){
                 hi=mid;
