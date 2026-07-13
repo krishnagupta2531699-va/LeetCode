@@ -1,18 +1,17 @@
 class Solution {
     public int findPeakElement(int[] arr) {
-        if(arr.length==1) return 0;
-         int max=Integer.MIN_VALUE;
-         int idx=-1;
-         for(int i=0;i<arr.length;i++){
-            if(arr[i]>max){
-                idx=i;
-                max=arr[i];
-
+        int lo=0,hi=arr.length-1,mid=0;
+        while(lo<hi){
+            mid=lo+(hi-lo)/2;
+            
+           if(arr[mid]>arr[mid+1]){
+                hi=mid;
             }
-         }
-         return idx;
-        
-       
+            else{
+                lo=mid+1;
+            }
+        }
+        return lo;
     }
 }
 
