@@ -4,7 +4,7 @@ class Solution {
         int[] arr = new int[num1.length + num2.length];
 
         int i = 0, j = 0, k = 0;
-        double mean=0.00000;
+        double mean;
         while(i < num1.length && j < num2.length){
             if(num1[i] < num2[j]){
                 arr[k++] = num1[i++];
