@@ -29,13 +29,14 @@ class Solution {
         int n = arr.length;
 
         if(n % 2 != 0){
-            mean=(double)arr[n/2];
+            return (double)arr[n/2];
         }
         else{
            double sum=arr[(n/2)-1]+arr[(n/2)];
             mean=sum/2;
+            return mean;
         }
-        return mean;
+       
     }
 }
 
