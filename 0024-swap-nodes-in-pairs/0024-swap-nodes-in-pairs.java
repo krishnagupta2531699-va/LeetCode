@@ -17,22 +17,20 @@ class Solution {
         ListNode z=dum2;
         ListNode i=head;
         int l=0;
-        while (i != null) {
-            ListNode next = i.next;
-            i.next = null;
-
-            if (l % 2 == 0) {
-                t.next = i;
-                t = i;
-            } else {
-                z.next = i;
-                z = i;
-            }
-
-            l++;
-            i = next;
+        while(i!=null){
+             if(l%2==0){
+                t.next=i;
+                t=i;
+             }
+             else{
+                z.next=i;
+                z=i;
+             }
+             l++;
+             i=i.next;
         }
-
+        t.next = null;
+        z.next = null;
         ListNode a=dum2.next;
         ListNode b=dum1.next;
         ListNode dummy=new ListNode(-1);
