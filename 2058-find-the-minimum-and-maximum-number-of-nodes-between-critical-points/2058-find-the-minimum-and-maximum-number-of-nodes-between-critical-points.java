@@ -2,12 +2,9 @@
 class Solution {
     public int[] nodesBetweenCriticalPoints(ListNode head) {
         ListNode temp=head;
-        int size=0;
+       
         int[] arr1={-1,-1};
-        while(temp!=null){
-            size++;
-            temp=temp.next;
-        }
+     
        
         ArrayList<Integer> arr=new ArrayList<>();
         ListNode i=head;
