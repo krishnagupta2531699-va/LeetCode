@@ -1,6 +1,5 @@
 class Solution {
     public String removeOuterParentheses(String s) {
-       if(s.equals("()()")) return ""; 
        Stack<Character> stack=new Stack<>();
        int j=0;
      
